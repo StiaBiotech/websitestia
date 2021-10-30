@@ -5,7 +5,7 @@
             src: url();
         }
         
-         :root {
+:root {
             --color0: rgb(30, 155, 103);
             --color1: rgb(95, 187, 95);
             --color2: rgba(41, 95, 41, 0.89);
@@ -21,18 +21,18 @@
             --draft_font: font-family: 'Irish Grover', cursive;
         }
         
-        * {
+* {
             margin: 0px;
             padding: 0px;
         }
         
-        body {
+body {
             background-color: var(--cor0);
             font-family: var(--fonte-padrao);
         }
         
-        header {min-width: 150px;
+header {min-width: 150px;
      text-align: center;
     padding-top: 40px;}
         
-        footer {}
+footer {padding: 0ch;}
