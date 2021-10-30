@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import url();
+@font-face {
+    font-family: face;
+    src: url();
+}
+
+:root{
+--
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+}
+
+header{
+
+}
+
+footer{ 
+
+}
