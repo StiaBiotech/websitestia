@@ -1,4 +1,5 @@
-@charset "utf-8";@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Irish+Grover&display=swap');
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Irish+Grover&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fruktur&family=Irish+Grover&display=swap');
 @font-face {
             font-family: face;
@@ -32,7 +33,7 @@ body {
         }
         
 header {min-width: 150px;
-     text-align: center;
+    text-align: center;
     padding-top: 40px;}
         
 footer {padding: 0ch;}
