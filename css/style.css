@@ -28,7 +28,7 @@
         }
         
 body {
-            background-color: var(--color5);
+            background-image: linear-gradient(to left, var(--color5),var(--color7));
             font-family: var(--fonte-padrao);
         }
         
