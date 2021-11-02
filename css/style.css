@@ -23,9 +23,9 @@
         }
         
 * {
-            margin: 0px;
-            padding: 0px;
-        }
+    margin: 0px;
+    padding: 0px;
+}
         
 body {
     background-image: linear-gradient(to left, var(--color5),var(--color7));
