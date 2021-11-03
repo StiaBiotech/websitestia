@@ -45,8 +45,8 @@ header > h1{
 }
 
 .restrict > a{
-  margin-right: -75vh;
   padding: 0 10px 10px;
+  background-color: white;
 }
 
 nav{
@@ -100,7 +100,7 @@ footer{
 /* Configurações de Layout de sessão para Form */
 
 .auth-page{
-    height: 100vh;
+    overflow: hidden;
     background-color: #7159c1;
     font-family: Roboto, Arial, sans-serif;
 }
@@ -110,6 +110,10 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .form-section{
+    text-align: center;
+
   }
   
   form {
@@ -206,22 +210,79 @@ section {
 */
 /* Animação do Form */
 
+@keyframes fade{
+  from{
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to{
+  opacity: 1;
+  transform: scale(1);
+  }
+}
+
+@keyframes move {
+  from{
+      opacity: 0;
+      transform: translateX(-35%);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0%);
+  }    
+}
+
+@keyframes down {
+from{
+  transform: translateY(0);
+}
+to{
+  transform: translateY(100vh);
+}
+}
+
+@keyframes emptyfield {
+0%, 100% {
+  transform: translateX(0);
+}
+35% {
+  transform: translateX(-15%);
+}
+70% {
+  transform: translateX(15%);
+}
+}
+
+@keyframes upside {
+  from{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50%{
+    opacity: 1;
+  }
+  to{
+    transform: translateY(-800px) rotate(960deg);
+  }
+  
+}
+
 form{
     overflow: hidden ;
-    animation-name: fade;
-    animation-duration: 1s;
+    animation-name: fade 200ms;
 }
+
 
 form .input-block:nth-child(1){
     animation-name: move;
-    animation-duration: 500ms;
-    animation-delay: 0.25s;
+    animation-duration: 400ms;
+    animation-delay: 100ms;
 }
 
 form .input-block:nth-child(2){
     animation-name: move;
-    animation-duration: 500ms;
-    animation-delay: 0.55s;
+    animation-duration: 400ms;
+    animation-delay: 550ms;
     animation-fill-mode: backwards;
 }
 form .btn-login{
@@ -231,24 +292,23 @@ form .btn-login{
     animation-fill-mode: backwards;
 }
 
-@keyframes fade{
-    from{
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to{
-    opacity: 1;
-    transform: scale(1);
-    }
+.form-hide{
+  animation: down 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@keyframes move {
-    from{
-        opacity: 0;
-        transform: translateX(-35%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0%);
-    }    
+form.validate-error {
+  animation: emptyfield 500ms linear, fade paused;
+  animation-iteration-count: 2;
 }
+.squares li{
+    width: 20px;
+    height: 20px;
+    background-color: #3e325eaf;
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: upside 2s infinite alternate;
+    z-index: -1;
+  }
