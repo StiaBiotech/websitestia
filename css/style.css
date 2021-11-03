@@ -45,8 +45,11 @@ header > h1{
 }
 
 .restrict > a{
-  padding: 0 10px 10px;
+  padding: 10px;
+  margin-left: 100px;
   background-color: white;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 nav{
@@ -103,6 +106,7 @@ footer{
     overflow: hidden;
     background-color: #7159c1;
     font-family: Roboto, Arial, sans-serif;
+    
 }
 
 section {
@@ -113,6 +117,8 @@ section {
   }
   .form-section{
     text-align: center;
+    margin: auto;
+    margin-top: auto;
 
   }
   
