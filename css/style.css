@@ -4,7 +4,7 @@
     font-family: face;
     src: url();
 }
-        
+   
 :root {
     --color0: #624393;
     --color1: rgb(95, 187, 95);
@@ -20,7 +20,11 @@
     --f_draft_font: font-family: 'Fruktur', cursive;
     --irish_font: font-family: 'Irish Grover', cursive;
 }
-        
+
+html{
+  height: 99%;
+}
+
 * {
     margin: 0;
     padding: 0;
